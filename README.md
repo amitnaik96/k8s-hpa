@@ -1,7 +1,11 @@
-# K8s Horizontal Pod Autoscaler
+# K8s Horizontal Pod Autoscaler  
+This repo demonstrates how to deploy an Express app on a local Kubernetes cluster using kind with Horizontal Pod Autoscaler (HPA) to auto-scale pods based on CPU usage.
+
+### **Architecture**
+![Architecture](https://github.com/amitnaik96/k8s-hpa/blob/master/images-readme/build.png)   
 
 ## **Setup Instructions**
-### **Clone the repo**
+### **Clone the Repo**
 ```bash
     git clone https://github.com/amitnaik96/k8s-hpa.git
     cd kubernetes
@@ -45,8 +49,10 @@
 ```bash
      kubectl get hpa
 ```
+![hpa](https://github.com/amitnaik96/k8s-hpa/blob/master/images-readme/hpa.png) 
 
 hit `http://localhost:3000/cpu` in multiple tabs to increase average cpu utilization
-
+![tabs](https://github.com/amitnaik96/k8s-hpa/blob/master/images-readme/tabs.png) 
 
 pods scaled up from 2 to 4
+![scaledup](https://github.com/amitnaik96/k8s-hpa/blob/master/images-readme/scaledup.png) 
