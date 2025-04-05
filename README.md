@@ -11,7 +11,7 @@ This repo demonstrates how to deploy an Express app on a local Kubernetes cluste
     cd kubernetes
 ```
 
-### **Local**
+### **Local Setup**
 ```bash
     # create kind cluster
     kind create cluster --config .\kind.yml --name k8s-hpa
